@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/calcStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <main class="calc-body bg-dark">
+      <div id="calc-screen" class=" p-1">
+          <input id="valor" class="p-2" type="text" value="0" maxlength="20">
+      </div>
+      <div>
+        <ul class="d-flex justify-content-center">
+          <li onclick="obtenerNumero(this)" data-value="1" class="btn btn-warning p-3 m-2">1</li>
+          <li onclick="obtenerNumero(this)" data-value="2" class="btn btn-warning p-3 m-2">2</li>
+          <li onclick="obtenerNumero(this)" data-value="3" class="btn btn-warning p-3 m-2">3</li>
+          <li onclick="obtenerOperador(this)"   data-value="+" class="btn btn-danger p-3 m-2">+</li>
+        </ul>
+        <ul class="d-flex justify-content-center">
+          <li onclick="obtenerNumero(this)" data-value="4" class="btn btn-warning p-3 m-2">4</li>
+          <li onclick="obtenerNumero(this)" data-value="5" class="btn btn-warning p-3 m-2">5</li>
+          <li onclick="obtenerNumero(this)" data-value="6" class="btn btn-warning p-3 m-2">6</li>
+          <li onclick="obtenerOperador(this)"   data-value="-" class="btn btn-danger p-3 m-2">-</li>
+        </ul>
+        <ul class="d-flex justify-content-center">
+          <li onclick="obtenerNumero(this)" data-value="7" class="btn btn-warning p-3 m-2">7</li>
+          <li onclick="obtenerNumero(this)" data-value="8" class="btn btn-warning p-3 m-2">8</li>
+          <li onclick="obtenerNumero(this)" data-value="9" class="btn btn-warning p-3 m-2">9</li>
+          <li onclick="obtenerOperador(this)"   data-value="*" class="btn btn-danger p-3 m-2">*</li>
+        </ul>
+        <ul class="d-flex justify-content-center">
+          <li onclick="obtenerNumero(this)" data-value="." class="btn btn-warning p-3 m-2">.</li>
+          <li onclick="obtenerNumero(this)" data-value="0" class="btn btn-warning p-3 m-2">0</li>
+          <li class="btn btn-warning p-3 m-2">%</li>
+          <li onclick="obtenerOperador(this)"   data-value="/" class="btn btn-danger p-3 m-2">/</li>
+        </ul>
+        <ul class="d-flex justify-content-center">
+          <li onclick="reset()" class="btn btn-info p-4 m-2">CE</li>
+          <li onclick="obtenerResultado()" class="btn btn-success p-4 m-2">=</li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="../JS/calculadora.js">
+    </script>
+  </body>
+</html>
